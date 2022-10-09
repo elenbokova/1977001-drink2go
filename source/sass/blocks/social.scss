@@ -1,0 +1,21 @@
+.social__list {
+    display: flex;
+}
+
+.social__item {
+    &:not(:last-child) {
+    margin-right: 20px;
+    }
+}
+
+.social__link {
+    padding: 10px;
+    display: inline-block;
+    color: $base-grey;
+
+    &:hover, 
+    &:active {
+    color: $base-primary;
+    }
+
+}
