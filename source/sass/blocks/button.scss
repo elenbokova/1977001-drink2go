@@ -28,6 +28,11 @@
         background-color: $base-grey;
     }
 
+    &--disabled {
+        background-color: $base-grey;
+        pointer-events: none;
+    }
+
     &--submit {
         display: block;
         min-width: 160px;

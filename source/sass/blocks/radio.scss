@@ -1,9 +1,9 @@
 .radio__item {
     margin-bottom: 21px;
 
- &:last-child {
-    margin-bottom: 0;
- }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .radio__legend {
@@ -40,29 +40,43 @@
         background-color: $primary-lighter;
         border-radius: 50%;
     }
+
+    &:hover {
+        &::before {
+            border: 2px solid $primary-lighter;
+        }
+
+        &::after {
+            display: block;
+            background-color: $primary-opacity;
+        }
+    }
 }
 
 .radio__control {
 
-    &:checked  + .radio__label::after {
+    &:checked + .radio__label::after {
+        background-color: $primary-lighter;
+    }
+
+    &:checked + .radio__label::after {
         display: block;
     }
 
-    &:checked  + .radio__label::before {
+    &:checked + .radio__label::before {
         border-color: $primary-lighter;
     }
 
     &:disabled + .radio__label {
         color: $base-grey;
         pointer-events: none;
-      }
+    }
 
-      &:disabled + .radio__label::before {
+    &:disabled + .radio__label::before {
         border-color: $light-grey;
-      }
+    }
 
-      &:disabled + .radio__label::after {
+    &:disabled + .radio__label::after {
         background-color: $light-grey;
-
-      }
+    }
 }

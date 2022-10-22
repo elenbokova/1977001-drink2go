@@ -146,6 +146,16 @@
     padding-top: 8px;
     padding-bottom: 8px;
     color: $base-black;
+
+    &:hover,
+    &:focus {
+        color: $primary-lighter;
+    }
+
+    &:active {
+        color: $primary-darker;
+    }
+
 }
 
 .footer__address {

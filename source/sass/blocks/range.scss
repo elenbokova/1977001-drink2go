@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
-
 }
 
 .range__scale {
@@ -44,6 +43,31 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $primary-opacity;
+  }
+
+  &:active::after {
+    background-color: $base-primary;
+  }
+
+  &:disabled {
+    background-image: radial-gradient(circle, $base-primary 60%, transparent 60%);
+  }
+
   &--min {
     left: 0;
   }
@@ -72,6 +96,12 @@
   border: 2px solid $primary-lighter;
   border-radius: 4px;
   appearance: textfield;
+
+  &:disabled {
+    background-color: $background-lightest-grey;
+    border-color: $base-grey;
+    color: $base-grey;
+  }
 
   @media (min-width: $tablet-width) {
     width: 93px;
@@ -119,4 +149,33 @@
 .range__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range {
+
+  &--disabled .range__bar {
+    background-color: $base-grey;
+
+  }
+
+  &--disabled .range__toggle {
+    border-color: $base-grey;
+    pointer-events: none;
+
+    &:after {
+      background-color: transparent;
+    }
+  }
+
+  &--disabled .range__input {
+    background-color: $background-lightest-grey;
+    border-color: $base-grey;
+    color: $base-grey;
+  }
+
+  &--disabled .range__input:focus-visible {
+    border-color: $base-grey;
+    outline: none;
+  }
+
 }

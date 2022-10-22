@@ -19,7 +19,7 @@
 
     &--disabled {
         color: $base-white;
-        background-color: $light-grey; 
+        background-color: $light-grey;
         pointer-events: none;
     }
 
@@ -58,7 +58,7 @@
 
     &--disabled {
         color: $base-white;
-        background-color: $light-grey; 
+        background-color: $light-grey;
         pointer-events: none;
     }
 
@@ -82,7 +82,7 @@
     }
 
     &--next svg {
-        transform: rotate(180deg);   
+        transform: rotate(180deg);
     }
 
     &--next svg,

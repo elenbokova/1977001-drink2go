@@ -4,18 +4,23 @@
 
 .social__item {
     &:not(:last-child) {
-    margin-right: 20px;
+        margin-right: 20px;
     }
 }
 
 .social__link {
-    padding: 10px;
+    padding: 10px 10px 8px;
     display: inline-block;
     color: $base-grey;
+    border-radius: 5px;
 
-    &:hover, 
-    &:active {
-    color: $base-primary;
+    &:hover {
+        color: $base-primary;
+        background-color: $base-secondary;
     }
 
+    &:active {
+        color: $base-primary;
+        background-color: $primary-opacity;
+    }
 }
