@@ -4,7 +4,7 @@
   height: auto;
 }
 
-.swiper-button-next, 
+.swiper-button-next,
 .swiper-button-prev {
   top: 0;
   margin: 0;
@@ -17,11 +17,11 @@
 
 .swiper-button-prev {
   left: 0;
-} 
+}
 
 .swiper-button-next {
   right: 0;
-} 
+}
 
 .swiper-slide {
   position: relative;
@@ -44,6 +44,6 @@
   background: $base-primary;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets {
+.swiper-horizontal>.swiper-pagination-bullets {
   bottom: 68px;
 }

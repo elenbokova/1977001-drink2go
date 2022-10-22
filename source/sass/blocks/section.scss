@@ -1,79 +1,79 @@
 .section {
-    padding-top: 50px;
+  padding-top: 50px;
 
-    &--benefits {
-        padding: 0 20px 63px;
+  &--benefits {
+    padding: 0 20px 63px;
 
-        @media (min-width: $tablet-width) {
-            padding: 98px 30px 98px;
-        }
+    @media (min-width: $tablet-width) {
+      padding: 98px 30px 98px;
+    }
 
-        @media (min-width: $desktop-width) {
-            max-width: 1440px;
-            padding: 98px 40px 117px;
-            margin: 0 auto;
-            
-        }
+    @media (min-width: $desktop-width) {
+      max-width: 1440px;
+      padding: 98px 40px 117px;
+      margin: 0 auto;
 
     }
 
-    &--catalog {
-        background-color: $background-lightest-grey;
+  }
 
-        @media (min-width: $tablet-width) {
-            padding-top: 79px;
-        }
+  &--catalog {
+    background-color: $background-lightest-grey;
 
-        @media (min-width: $tablet-width) {
-            padding-top: 101px;
-        }
-    }
-}
-
-.section__title {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-
-    &--benefits {
-        margin-bottom: 36px;
-
-        @media (min-width: $tablet-width) {
-            margin-bottom: 61px;
-        }
-
-        @media (min-width: $desktop-width) {
-            margin-bottom: 83px;
-        }
-    }
-
-    &--catalog {
-        margin-bottom: 20px;
-
-        @media (min-width: $desktop-width) {
-            margin-bottom: 39px;
-        }
+    @media (min-width: $tablet-width) {
+      padding-top: 79px;
     }
 
     @media (min-width: $tablet-width) {
-        font-size: 42px;
-        line-height: 64px;
+      padding-top: 101px;
     }
+  }
+}
+
+.section__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+
+  &--benefits {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 83px;
+    }
+  }
+
+  &--catalog {
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 39px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 
 
 }
 
 .section__label {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 4px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: $base-primary;
-    text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $base-primary;
+  text-transform: uppercase;
 }

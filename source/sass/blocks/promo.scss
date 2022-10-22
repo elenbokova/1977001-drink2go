@@ -1,48 +1,48 @@
 promo {
-    max-width: 1440px;
+  max-width: 1440px;
 }
 
 .promo__button {
-    width: 20px;
-    height: 100%;
-    background-color: transparent;
-    border: none;
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        height: 80%;
-    }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    height: 80%;
+  }
 
-    @media (min-width: $tablet-width) {
-        width: 80px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
 
-    &--next {
-        right: 0;
-    }
+  &--next {
+    right: 0;
+  }
 
-    &:hover {
-        background-image: linear-gradient(to right, $base-white, transparent);
+  &:hover {
+    background-image: linear-gradient(to right, $base-white, transparent);
 
-    }
+  }
 
-    &--prev:active {
-        background-image: linear-gradient(to right, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
-    }
+  &--prev:active {
+    background-image: linear-gradient(to right, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
+  }
 
-    &--next:hover {
-        background-image: linear-gradient(to left, $base-white, transparent);
+  &--next:hover {
+    background-image: linear-gradient(to left, $base-white, transparent);
 
-    }
+  }
 
-    &--next:active {
-        background-image: linear-gradient(to left, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
-    }
+  &--next:active {
+    background-image: linear-gradient(to left, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0));
+  }
 }
 
 .promo__pagination {
-    display: none;
+  display: none;
 
-    @media (min-width: $desktop-width) {
-        display: block;
-    }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

@@ -1,61 +1,61 @@
 .user-nav__item {
 
-    @media (min-width: $desktop-width) {
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 20px;
     }
+  }
 }
 
 .user-nav__link {
-    display: flex;
-    position: relative;
-    padding: 32px 20px;
-    align-items: center;
-    color: $base-black;
+  display: flex;
+  position: relative;
+  padding: 32px 20px;
+  align-items: center;
+  color: $base-black;
 
-    & svg {
-        position: absolute;
-        top: 37%;
-        left: 37%;
+  & svg {
+    position: absolute;
+    top: 37%;
+    left: 37%;
 
-        @media (min-width: $desktop-width) {
-            position: relative;
-            display: flex;
-            top: 0;
-            left: 0;
-        }
+    @media (min-width: $desktop-width) {
+      position: relative;
+      display: flex;
+      top: 0;
+      left: 0;
     }
+  }
 
-    &:hover,
-    &:focus {
-        color: $base-primary
-    }
+  &:hover,
+  &:focus {
+    color: $base-primary
+  }
 
-    &:active {
-        color: $base-primary;
-        background-color: $base-secondary;
-    }
+  &:active {
+    color: $base-primary;
+    background-color: $base-secondary;
+  }
 }
 
 .user-nav__title {
-    display: none;
+  display: none;
 
-    &:hover,
-    &:focus {
-        color: $base-primary
-    }
+  &:hover,
+  &:focus {
+    color: $base-primary
+  }
 
-    &:active {
-        color: $base-primary;
-    }
+  &:active {
+    color: $base-primary;
+  }
 
-    @media (min-width: $desktop-width) {
-        display: flex;
-        margin-left: 12px;
-        font-size: 12px;
-        font-weight: 500;
-        color: $base-black;
-        text-transform: uppercase;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $base-black;
+    text-transform: uppercase;
+  }
 }

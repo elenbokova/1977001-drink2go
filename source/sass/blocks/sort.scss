@@ -1,41 +1,41 @@
 .sort {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .sort__title {
-    margin: 0;
-    margin-right: 15px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
+  margin: 0;
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
 
-    @media (min-width: $tablet-width) {
-        margin-right: 22px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 
 }
 
 .sort__control {
-    width: 155px;
-    padding: 0;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
-    color: $base-primary;
-    border: transparent;
-    background-color: transparent;
-    cursor: pointer;
+  width: 155px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $base-primary;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-        background-color: $base-secondary;
-    }
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+  }
 }
 
 .sort__control option {
-    font-weight: 400;
-    color: $base-black;
+  font-weight: 400;
+  color: $base-black;
 
 }
